@@ -21,6 +21,15 @@
       (catch Exception ex
         ex)))
   (else [this _]
+    this)
+
+  nil
+  (then [this f]
+    (try
+      (f this)
+      (catch Exception ex
+        ex)))
+  (else [this _]
     this))
 
 (defn switch

@@ -2,8 +2,8 @@
   (:require [clojure.string :as str]))
 
 (defprotocol IResult
-  (then [this f])
-  (else [this f]))
+  (then [not-exception f] "Invoke f with not-exception as arg")
+  (else [exception f] "Invoke f with exception as arg"))
 
 (extend-protocol IResult
   Exception

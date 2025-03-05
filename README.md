@@ -19,3 +19,5 @@
     - [Metosin Sieppari](https://github.com/metosin/sieppari)
     - [Papilon](https://github.com/lambda-toolshed/papillon)
       - [YT Talk](https://www.youtube.com/watch?v=bDN898hu_wQ)
+  - Common LISP style conditions
+    - [Farolero](https://github.com/IGJoshua/farolero)

@@ -5,7 +5,6 @@
   (then [this f])
   (else [this f]))
 
-;; Flow does this Protocol impl on Throwable
 (extend-type Exception
   IResult
   (then [this _] this)

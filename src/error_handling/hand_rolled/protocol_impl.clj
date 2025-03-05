@@ -1,4 +1,4 @@
-(ns error-handling.protocol-impl
+(ns error-handling.hand-rolled.protocol-impl
   (:require [clojure.string :as str]))
 
 (defprotocol IResult

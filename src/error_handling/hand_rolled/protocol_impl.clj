@@ -5,17 +5,16 @@
   (then [this f])
   (else [this f]))
 
-(extend-type Exception
-  IResult
+(extend-protocol IResult
+  Exception
   (then [this _] this)
   (else [this f]
     (try
       (f this)
       (catch Exception e
-        e))))
+        e)))
 
-(extend-type Object
-  IResult
+  Object
   (then [this f]
     (try
       (f this)
